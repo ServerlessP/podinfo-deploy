@@ -4,6 +4,9 @@ apiVersion: apps/v1
 metadata:
   name: podinfo
   namespace: dev
+  annotations:
+    flux.weave.works/automated_user: Pedro Tavares <pedrotavares.ms@gmail.com>
+    flux.weave.works/automated_msg: test
 spec:
   replicas: 4
   selector:
@@ -18,10 +21,10 @@ spec:
     spec:
       containers:
       - name: podinfod
-        image: quay.io/stefanprodan/podinfo:1.3.0
+        image: quay.io/stefanprodan/podinfo:1.5.1
         command:
-            - ./podinfo
-            - --port=9898
+        - ./podinfo
+        - --port=9898
         ports:
         - containerPort: 9898
         readinessProbe:
