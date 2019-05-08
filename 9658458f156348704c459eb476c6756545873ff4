@@ -1,0 +1,1 @@
+{"jobID":"02fd3226-7fd4-2100-9a7b-08b6f10a565a","spec":{"type":"policy","cause":{"Message":"","User":"Pedro Tavares \u003cpedrotavares.ms@gmail.com\u003e"},"spec":{"dev:deployment/podinfo":{"add":null,"remove":{"automated":"true"}}}},"result":null}
